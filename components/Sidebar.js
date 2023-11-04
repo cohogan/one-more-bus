@@ -30,11 +30,11 @@ function Header ({}) {
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/logo.svg"
-        alt="Scythian Logo"
+        alt="One More Bus Logo"
         style={{ width: 30, height: 30 }}
       />
 
-      <h2>Scythian</h2>
+      <h2>One More Bus</h2>
       {/* <IconButton style={{marginLeft: 'auto'}}><SearchIcon/></IconButton> */}
     </Stack>
     {/* <h5>Select nations to display</h5>

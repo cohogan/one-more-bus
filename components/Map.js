@@ -128,9 +128,9 @@ export default function MapBox({ markers, layers }) {
   return (
     <Map
       initialViewState={{
-        longitude: 66.9237,
-        latitude: 48.0196,
-        zoom: 4,
+        longitude: -122.450,
+        latitude: 37.76941,
+        zoom: 14,
       }}
       mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
       // mapStyle={layers.includes('Population') ? "mapbox://styles/connorhogan/clhgray1j002e01r53ady8gd4" : "mapbox://styles/mapbox/light-v11"}

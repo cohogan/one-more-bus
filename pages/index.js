@@ -15,10 +15,10 @@ export default function Home() {
   return (
     <>
     <Head>
-        <title>Scythian</title>
+        <title>One More Bus</title>
         <meta name="description" content="Critical Infrasture modeling and monitoring for the CASA region" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:image" content="https://projectscythian.com/scythian_og.webp" />
+        <meta property="og:image" content="https://projectOne More Bus.com/One More Bus_og.webp" />
       </Head>
       <div style={{width: "100vw", height: "100vh"}}>
         <Map markers={markers} layers={layers} />

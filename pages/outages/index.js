@@ -14,10 +14,10 @@ export default function Home() {
   return (
     <>
     <Head>
-        <title>Outages - Scythian</title>
+        <title>Outages - One More Bus</title>
         <meta name="description" content="Critical Infrasture modeling and monitoring for the CASA region" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:image" content="https://projectscythian.com/scythian_og.webp" />
+        <meta property="og:image" content="https://projectOne More Bus.com/One More Bus_og.webp" />
       </Head>
       <Container>
       <Stack
@@ -29,7 +29,7 @@ export default function Home() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo.svg"
-              alt="Scythian Logo"
+              alt="One More Bus Logo"
               style={{ width: 30, height: 30 }}
             />
 

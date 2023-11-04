@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home - Scythian</title>
+        <title>Home - One More Bus</title>
         <meta
           name="description"
           content="Critical Infrasture modeling and monitoring for the CASA region"
@@ -13,7 +13,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           property="og:image"
-          content="https://projectscythian.com/scythian_og.webp"
+          content="https://projectOne More Bus.com/One More Bus_og.webp"
         />
       </Head>
       <Container>
@@ -28,11 +28,11 @@ export default function Home() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/logo.svg"
-                alt="Scythian Logo"
+                alt="One More Bus Logo"
                 style={{ width: 30, height: 30 }}
               />
 
-              <h2>Scythian</h2>
+              <h2>One More Bus</h2>
             </Stack>
             <Typography
               variant="h1"
@@ -42,7 +42,7 @@ export default function Home() {
                 fontWeight: "700",
               }}
             >
-              Monitor Critical Infrastructure with Scythian
+              Monitor Critical Infrastructure with One More Bus
             </Typography>
             <Typography variant="h4" style={{ marginBottom: "2rem" }}>
               Real-time power grid metrics. Anywhere.
