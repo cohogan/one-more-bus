@@ -1,0 +1,12 @@
+.popup-top :global(.mapboxgl-popup-tip) {
+    border-bottom-color: rgb(255, 255, 255);
+}
+
+.popup :global(.mapboxgl-popup-content) {
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(230, 230, 230, 0.9);
+    }
