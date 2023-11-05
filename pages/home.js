@@ -27,7 +27,7 @@ export default function Home() {
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/logo.svg"
+                src="/logo.png"
                 alt="One More Bus Logo"
                 style={{ width: 30, height: 30 }}
               />
