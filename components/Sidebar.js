@@ -49,7 +49,8 @@ function Outages({value, handleChange }) {
     return (
         <>
             <Stack direction="row" spacing={1} style={{ alignItems: "center", marginTop: "15px", marginBottom: "5px" }}>
-                <h5 style={{ margin: "0px" }}>Instructions: click a point on the map to see the travel times from that point, and add an extra bus in the rotation by clicking below</h5>
+                <h2 className={styles.numHours}>99K</h2>
+                <h4>hours spent on transit daily</h4>
             </Stack>
 
             <FormControl>
@@ -59,9 +60,31 @@ function Outages({value, handleChange }) {
     value={value}
     onChange={handleChange}
   >
-    <FormControlLabel value="None" control={<Radio />} label="None" />
-    <FormControlLabel value="female" control={<Radio />} label="Female" />
-    <FormControlLabel value="male" control={<Radio />} label="Male" />
+    <p>Pick where to add a bus:</p>
+    <div className={styles.busOptionButton} onClick={() => alert('Coming soon!')}>
+        <Stack direction="row" spacing={2} style={{alignItems: "center"}}>
+            <p className={styles.busCodeContainer}>7</p>
+            <p>Haight/Noriega</p>
+        </Stack>
+    </div>
+    <div className={styles.busOptionButton} onClick={() => alert('Coming soon!')}>
+        <Stack direction="row" spacing={2} style={{alignItems: "center"}}>
+            <p className={styles.busCodeContainer}>6</p>
+            <p>Haight/Parnassus</p>
+        </Stack>
+    </div>
+    <div className={styles.busOptionButton} onClick={() => alert('Coming soon!')}>
+        <Stack direction="row" spacing={2} style={{alignItems: "center"}}>
+            <p className={styles.busCodeContainer}>22</p>
+            <p>Fillmore</p>
+        </Stack>
+    </div>
+    <div className={styles.busOptionButton} onClick={() => alert('Coming soon!')}>
+        <Stack direction="row" spacing={2} style={{alignItems: "center"}}>
+            <p className={styles.busCodeContainer}>49</p>
+            <p>Van Ness</p>
+        </Stack>
+    </div>
   </RadioGroup>
 </FormControl>
         </>

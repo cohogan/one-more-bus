@@ -7,6 +7,7 @@
     border-radius: 0px 15px 15px 0px;
     background-color: rgba(255, 255, 255, 0.0);
     font-family: var(--transit-font);
+    padding-left: 10px;
     /* overflow-y: scroll; */
     /* overflow: auto; */
 }
@@ -74,3 +75,38 @@
     /* background-color: blueviolet; */
     padding: 0px 10px;
   }
+
+.numHours {
+    font-size: 70px;
+    margin-top: 0px;
+}
+
+.busOptionButton {
+    width: 100%;
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+
+.busOptionButton:hover {
+    cursor: pointer;
+    background-color: rgba(225, 225, 225)
+}
+
+.busOptionButton:active {
+    background-color: rgba(225, 225, 225, 0.5)
+}
+
+.busCodeContainer {
+    background-color: green;
+    padding-left: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 13px;
+    margin: 0;
+    color: white;
+    border-radius: 100px;
+}

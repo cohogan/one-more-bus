@@ -1,0 +1,23 @@
+.headerContainer {
+    position: absolute;
+    width: 550px;
+    max-width: 550px;
+    z-index: 1;
+    text-align: center;
+    left: calc(50% - 250px);
+    top: 50px;
+}
+
+.subheading {
+    font-family: var(--transit-font);
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.heading {
+    font-family: var(--transit-font);
+    font-size: 80px;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    color: #FF9209;
+}
