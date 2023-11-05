@@ -130,11 +130,12 @@ export default function MapBox({ markers, layers }) {
       initialViewState={{
         longitude: -122.450,
         latitude: 37.76941,
-        zoom: 14,
+        zoom: 12,
       }}
       mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
       // mapStyle={layers.includes('Population') ? "mapbox://styles/connorhogan/clhgray1j002e01r53ady8gd4" : "mapbox://styles/mapbox/light-v11"}
-      mapStyle="mapbox://styles/mapbox/light-v11"
+      // mapStyle="mapbox://styles/mapbox/light-v11"
+      mapStyle="mapbox://styles/connorhogan/clokqilzw001y01rhciyhas0z"
       // mapStyle="mapbox://styles/connorhogan/clhgray1j002e01r53ady8gd4"
       // mapStyle="mapbox://styles/connorhogan/clgcso28h002101rnpejb0gfr"
       // mapStyle="mapbox://styles/connorhogan/clgdeo7n6000c01o2yoamnask"
