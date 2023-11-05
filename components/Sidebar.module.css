@@ -2,12 +2,11 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 100%;
+    /* height: 100%; */
     width: 340px;
     border-radius: 0px 15px 15px 0px;
     background-color: rgba(255, 255, 255, 0.0);
     font-family: var(--transit-font);
-    color: rgb(211, 139, 79);
     /* overflow-y: scroll; */
     /* overflow: auto; */
 }
@@ -63,6 +62,7 @@
     height: calc(100% - 60px);
     overflow-y: overlay;
     padding: 0px 10px;
+    color: rgb(211, 139, 79);
 }
 
 .footer {

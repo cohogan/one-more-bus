@@ -2,6 +2,47 @@ import * as React from "react";
 import Map, { Marker, Source, Layer } from "react-map-gl";
 import PopupInfo from "./Popup";
 
+
+const mapLayers = [
+  // SF Matrix Text
+  {
+    // to do-string and round on TravelTime to get text
+    name: "SF Matrix",
+    source: {
+      id: "output_is_the_name",
+      type: "vector",
+      url: "mapbox://connorhogan.output_is_the_name",
+    },
+    layer: {
+      id: "output_is_the_name-layer",
+      type: "symbol",
+      source: "output_is_the_name",
+      "source-layer": "output_is_the_name",
+      layout: {
+        "text-field": ["to-string", ["round", ["get", "TravelTime"]]],
+        "text-size": 12,
+        "text-offset": [0, 1.25],
+        "text-anchor": "top",
+      },
+      paint: {
+        "text-color": "black",
+        "text-halo-color": [
+          "interpolate",
+          ["linear"],
+          ["get", "TravelTime"],
+          11.49595,
+          "rgba(0, 194, 36, 0.86)",
+          59.99,
+          "rgba(255, 46, 67, 0.52)",
+          60,
+          "rgba(0, 0, 0, 0)"
+        ],
+        "text-halo-width": 1,
+      },
+    }
+  }
+];
+
 export default function MapBox({ markers, layers }) {
   console.log(layers)
   const [popupInfo, setPopupInfo] = React.useState(null);
@@ -42,6 +83,18 @@ export default function MapBox({ markers, layers }) {
       attributionControl={false}
       logoPosition="bottom-right"
     >
+
+{mapLayers.map(layer => {  
+        if (true) {
+      return (
+      <Source {...layer.source} key={layer.name}>
+          <Layer {...layer.layer} />
+        </Source>
+        )}
+      }
+      )}
+
+
       {zones.map((marker, index) => {
         if (layers.includes("Online") && marker.status === "Online") {
           return (
